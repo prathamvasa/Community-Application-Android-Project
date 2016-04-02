@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.i851409.communityapp.tweets"
+    tools:showIn="@layout/activity_tweets">
+
+    <ListView
+        android:layout_width="360dp"
+        android:layout_height="380dp"
+        android:layout_gravity ="center"
+        android:id="@+id/listView9"
+        android:layout_above="@+id/editText35"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/editText35"
+        android:layout_height="60dp"
+        android:minLines="1"
+        android:maxLines="3"
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:background="@drawable/textbox"
+        android:textSize="25sp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Post Anonymously" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/refresh"
+        android:id="@+id/button36"
+        android:layout_gravity="right"
+        android:layout_above="@+id/listView9"
+        android:layout_alignLeft="@+id/button35"
+        android:layout_alignStart="@+id/button35" />
+
+    <Button
+
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:background="@drawable/send"
+        android:id="@+id/button35"
+        android:layout_below="@+id/listView9"
+        android:layout_alignRight="@+id/editText35"
+        android:layout_alignEnd="@+id/editText35" />
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Community Tweets"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:minLines="1"
+        android:maxLines="1"
+        android:id="@+id/textView33"
+        android:layout_alignTop="@+id/button36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
